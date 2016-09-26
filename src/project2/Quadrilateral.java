@@ -1,7 +1,7 @@
 package project2;
 
 /**
- * Quadrilateral Class that represents a Quadrilateral using four points, it 
+ * Represents a Quadrilateral using four points, it 
  * assumes that the points are stored in a counter-clockwise or clockwise 
  * sequence, but <code>point1</code> is always assumed to be the bottom left
  * point of the Quadrilateral, in turn this means <code>point3</code> will 
@@ -50,17 +50,18 @@ public class Quadrilateral {
     }
 
     /**
-     * Returns the coordinates of the Quadrilateral as a well formated String 
-     * representation of the Quadrilateral.
-     * @return String representation of Quadrilateral
+     * Returns the coordinates of the Quadrilateral in the order they were 
+     * recieved as a well formated String representation of the Quadrilateral.
+     * 
+     * @return the String representation of Quadrilateral
      */
     @Override
     public String toString() {
         return "Coordinates of " + this.getClass().getSimpleName() + " are:\n"
-                + "< " + getPoint1().getX() + ", " + getPoint1().getY() + " >, "
-                + "< " + getPoint2().getX() + ", " + getPoint2().getY() + " >, "
-                + "< " + getPoint3().getX() + ", " + getPoint3().getY() + " >, "
-                + "< " + getPoint4().getX() + ", " + getPoint4().getY() + " >\n";
+                + "< " + this.getPoint1().getX() + ", " + this.getPoint1().getY() + " >, "
+                + "< " + this.getPoint2().getX() + ", " + this.getPoint2().getY() + " >, "
+                + "< " + this.getPoint3().getX() + ", " + this.getPoint3().getY() + " >, "
+                + "< " + this.getPoint4().getX() + ", " + this.getPoint4().getY() + " >\n";
     }
 
     /**
